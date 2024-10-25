@@ -1,0 +1,503 @@
+:root {
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+}
+
+.plus-jakarta-sans-ceva {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Slate-100);
+}
+
+.mainContainer{
+    display: flex;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.invisible{
+    display: none !important;
+}
+
+.titleClear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leftContainer{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 350px;
+    gap: 20px;
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: white;
+    background-color: var(--Slate-900);
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+input{
+    padding: 0px 15px;
+    font-weight: 700;
+}
+
+.mortgageAmountInput{
+    display: flex;
+    width: 100%;
+    border: 1.5px solid var(--Slate-300);
+    border-radius: 5px;
+}
+
+#mortgageAmount{
+    width: 100%;
+}
+
+.mortgageTermInput{
+    display: flex;
+    border: 1.5px solid var(--Slate-300);
+    border-radius: 5px;
+}
+
+.interestRateInput{
+    display: flex;
+    border: 1.5px solid var(--Slate-300);
+    border-radius: 5px;
+}
+
+#pounds{
+    display: flex;
+    padding: 8px 11px;
+    background-color: var(--Slate-100);
+    font-weight: 600;
+    color: var(--Slate-900);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+}
+
+#mortgageAmount{
+    border: none;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#interestRate{
+    border:none; 
+    width: 89%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#mortgageTerm{
+    border:none;
+    width: 83%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.mortgageTerm{
+    display: flex;
+}
+
+#years{
+    display: flex;
+    padding: 8px 11px;
+    background-color: var(--Slate-100);
+    font-weight: 600;
+    color: var(--Slate-900);
+    font-size: 0.95rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#percent{
+    display: flex;
+    padding: 8px 11px;
+    background-color: var(--Slate-100);
+    font-weight: 600;
+    color: var(--Slate-900);
+    font-size: 0.95rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.interestRateContainer{
+    width: 48%;
+}
+
+.mortgageTermContainer{
+    width: 48%;
+}
+
+.termAndInterest{
+    display: flex;
+   justify-content: space-between;
+}
+
+.repaymentSelector{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid var(--Slate-500);
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 8px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#repaymentLabel:hover{
+    
+        cursor: pointer;
+    
+}
+
+#repayment:hover{
+    
+    cursor: pointer;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.leftTitle{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.mortgageTermLabel{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--Slate-500);
+}
+
+.interestRateLabel{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--Slate-500);
+}
+
+.mortgageAmountLabel{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--Slate-500);
+}
+
+#clearAll{
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: var(--Slate-500);
+}
+
+#clearAll:hover{
+    cursor: pointer;
+}
+
+.resultSubtitle{
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 18px;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    color: var(--Slate-300);
+}
+
+.resultTitle{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.interestSelector{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid var(--Slate-500);
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 8px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+#interestLabel{
+    display: flex;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#interest{
+    display: flex;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selectorLabel{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--Slate-500);
+    
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--Lime);
+    border: none;
+    font-weight: 900;
+    padding: 12px;
+    max-width: 70%;
+    border-radius: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.rightContainerAfter{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    max-width: 400px;
+    color: white;
+    background-color: var(--Slate-900);
+    border-bottom-left-radius: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0px 30px;
+    gap: 1rem;
+}
+
+.afterTitle{
+    display: flex;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.afterSubtitle{
+    font-size: 0.8rem;
+    color: var(--Slate-300);
+    line-height: 1.2rem;
+}
+
+.resultContainer{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-top: 3px solid var(--Lime);
+    background-color: rgb(14, 35, 46);
+    padding: 25px;
+    width: 100%;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.bottomResultLabel{
+    font-size: 0.8rem;
+    color: var(--Slate-300);
+}
+
+.topResultLabel{
+    font-size: 0.8rem;
+    color: var(--Slate-300);
+}
+
+.resultTopPart{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#topResult{
+font-size: 2.65rem;
+color: var(--Lime);
+font-weight: 700;
+}
+
+hr{
+    border:1px solid rgb(122, 122, 122);
+}
+
+#bottomResult{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.borderColor{
+    border-color: var(--Lime) !important;
+    &:checked{
+        border: 1px solid var(--Lime) !important;
+        outline: none !important;
+    }
+}
+
+.backgroundColor{
+    background-color: var(--Lime) !important;
+}
+
+.selectorBackground{
+background-color: rgba(232, 235, 51, 0.377) !important;
+accent-color: var(--Lime);
+}
+
+@media screen and (max-width: 750px){
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100svh;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .mainContainer{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    .titleClear{
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        align-items: flex-start;
+        gap: 13px;
+    }
+
+    .termAndInterest{
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .leftContainer{
+        width: 90%;
+        padding: 0;
+        gap: 20px;
+        max-width: none;
+    }
+
+    .interestRateContainer{
+        width: 100%;
+    }
+
+    .mortgageTermContainer{
+        width: 100%;
+    }
+
+    .rightContainer{
+        width: 100%;
+        border-radius: 0 !important;
+    }
+
+    #button{
+        margin-bottom: 30px;
+        align-self: center;
+        width: 100%;
+        max-width: none;
+    }
+
+    .resultSubtitle{
+        font-size: 1rem;
+        margin-bottom: 36px;
+        line-height: 23px;
+    }
+
+    .resultTitle{
+        font-size: 1.4rem;
+    }
+
+    img{
+        margin-top: 25px;
+    }
+
+    .afterSubtitle{
+        font-size: 0.9rem;
+    }
+
+    .rightContainerAfter{
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+
+    .resultContainer{
+        gap: 1rem;
+        margin-bottom: 30px;
+    }
+
+   .afterTitle{
+    margin-top: 20px;
+   }
+
+   #topResult{
+    font-size:1.8rem;
+   }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="leftContainer">
+        <div class="titleClear">
+          <div class="leftTitle">Mortgage Calculator</div>
+          <div id="clearAll">Clear All</div>
+        </div>
+        <div class="mortgageAmountContainer">
+          <div class="mortgageAmountLabel">Mortgage Amount</div>
+          <div class="mortgageAmountInput">
+            <div id="pounds">£</div>
+            <input type="number" id="mortgageAmount" />
+          </div>
+        </div>
+        <div class="termAndInterest">
+          <div class="mortgageTermContainer">
+            <div class="mortgageTermLabel">Mortgage Term</div>
+            <div class="mortgageTermInput">
+              <input type="number" id="mortgageTerm" />
+              <div id="years">years</div>
+            </div>
+          </div>
+          <div class="interestRateContainer">
+            <div class="interestRateLabel">Interest Rate</div>
+            <div class="interestRateInput">
+              <input type="number" id="interestRate" />
+              <div id="percent">%</div>
+            </div>
+          </div>
+        </div>
+        <div class="selectorContainer">
+          <div class="selectorLabel">Mortgage Type</div>
+          <form id="form">
+            <div class="repaymentSelector">
+              <input type="radio" id="repayment" name="selector" />
+              <label for="repayment" id="repaymentLabel">Repayment</label>
+            </div>
+            <div class="interestSelector ">
+              <input type="radio" id="interest" name="selector" />
+              <label for="interest" id="interestLabel">Interest Only</label>
+            </div>
+          </form>
+        </div>
+        <button id="button"><i class="fas fa-calculator"></i> Calculate Repayments</button>
+      </div>
+      <div class="rightContainer ">
+        <img src="assets/images/illustration-empty.svg" width="35%" alt="" />
+        <div class="resultTitle">Results shown here</div>
+        <div class="resultSubtitle">
+          Complete the form and click “calculate repayments” to see what your
+          monthly repayments would be.
+        </div>
+      </div>
+      <div class="rightContainerAfter invisible">
+        <div class="afterTitle">Your results</div>
+        <div class="afterSubtitle">
+          Your results are shown below based on the information you provided. To
+          adjust the results, edit the form and click “calculate repayments”
+          again.
+        </div>
+        <div class="resultContainer">
+          <div class="resultTopPart">
+            <div class="topResultLabel">Your monthly repayments</div>
+            <div id="topResult">$1,797.74</div>
+          </div>
+          <hr />
+          <div class="resultBottomPart">
+            <div class="bottomResultLabel">
+              Total you'll repay over the term
+            </div>
+            <div id="bottomResult">$539,322.94</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
